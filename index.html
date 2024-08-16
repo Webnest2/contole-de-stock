@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة المخزون</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تطبيق إدارة المخزون</h1>
+        
+        <div class="input-group">
+            <label for="productType">النوع:</label>
+            <input type="text" id="productType">
+        </div>
+
+        <div class="input-group">
+            <label for="productCategory">الصنف:</label>
+            <input type="text" id="productCategory">
+        </div>
+        
+        <div class="input-group">
+            <label for="productTotal">العدد الكلي:</label>
+            <input type="number" id="productTotal">
+        </div>
+
+        <div class="input-group">
+            <label for="productAvailable">العدد الموجود:</label>
+            <input type="number" id="productAvailable">
+        </div>
+        
+        <div class="input-group">
+            <label for="productSold">العدد المباع:</label>
+            <input type="number" id="productSold">
+        </div>
+
+        <button onclick="addProduct()">إضافة المنتج</button>
+
+        <h2>قائمة المنتجات</h2>
+        <ul id="productList"></ul>
+
+        <!-- <button class="edit-button" onclick="editProduct(${product.id})">تعديل</button> -->
+    </div>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>

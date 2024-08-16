@@ -1,0 +1,138 @@
+/* CSS remains the same as the previous version */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .input-group input {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* استجابة للشاشات المتوسطة */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.75em;
+    }
+
+    button {
+        padding: 9px;
+        font-size: 15px;
+    }
+
+    .input-group input {
+        padding: 9px;
+        font-size: 15px;
+    }
+}
+
+/* استجابة للشاشات الكبيرة */
+@media (min-width: 901px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1, h2 {
+        font-size: 2em;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .input-group input {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
